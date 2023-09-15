@@ -1,4 +1,3 @@
-```
 # slowPaste
 
 Simulate human-like typing using Python, with the added feature of aborting the typing by pressing the `esc` key.
