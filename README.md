@@ -1,6 +1,6 @@
 # slowPaste
 
-Simulate human-like typing using Python, with the added feature of aborting the typing by pressing the `esc` key.
+Simulate human-like typing using Python with the added feature of adjustable speed.
 
 ## Features:
 - Simulates slow typing to mimic human input.
@@ -36,7 +36,7 @@ pip install pyperclip pyautogui keyboard
 
 - `slow_type()`: The main function that slowly types out the text.
   - Adjustable delay parameter to determine speed.
-  - Checks for `esc` key to cancel the typing.
+  - Checks for the press of APPLE ICON (top left) to cancel the typing.
 - `main()`: Reads the clipboard content and initiates the typing.
 
 ## Safety:
