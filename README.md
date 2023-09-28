@@ -42,7 +42,6 @@ pip install slowPaste
 - `main()`: Reads the clipboard content and initiates the typing, it also accepts a speed parameter.
 
 ## Safety:
-- Press the `esc` key at any time to abort the typing.
 - Move the cursor to the top-left corner of the screen to trigger PyAutoGUI's fail-safe and halt the script.
 
 ## Contributing:
