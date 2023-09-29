@@ -29,12 +29,12 @@ pip install slowPaste
 4. **Focus on Input Field**: After running the script, focus on the input field (e.g., text editor, browser) where you want the text to be typed.
 5. **Start Typing**: The script will begin typing out the content from the clipboard after a delay of 2 seconds.
 
-## Adjusting Speed:
+## Adjusting Speed & Text Input:
 
-- The `main` function accepts a speed parameter representing the typing speed in Words Per Minute (WPM). The default value is 100 WPM.
-- You can adjust it by passing the desired speed value when calling the `main` function.
+- The main function accepts a speed parameter representing the typing speed in Words Per Minute (WPM). The default value is 100 WPM. It also accepts an optional text parameter for manual input, with the default being the content currently copied to the clipboard.
+- You can adjust it by passing the desired speed value and text string when calling the main function.
   ```python
-  slow_type.main(150)  # Types the clipboard content at 150 WPM
+  slow_type.main(150, text="Hello, world!")  # Types the provided text at 150 WPM. If text is not provided, it types the clipboard content.
   ```
 
 ## Script Breakdown:
