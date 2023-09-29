@@ -16,20 +16,20 @@ def slow_type(text, speed=100): # Speed in WPM
         # Calculate delay
         delay = 60.0 / (5 * speed)
 
-        # Adjust delay by a random factor within ±20%
+        # Adjust delay by a random factor within ±20% 
         adjusted_delay = delay * random.uniform(0.8, 1.2)
 
         pyautogui.write(char)
         time.sleep(adjusted_delay)
 
-def main(speed=100):
+def main(speed=100,text=""):
     time.sleep(2)
     # Enable pyautogui's fail-safe # 
     pyautogui.FAILSAFE = True
 
     # Get the current clipboard content
-    text = pyperclip.paste()
-
+    if text=="":
+        text = pyperclip.paste()
     try:
         # Type it out slowly
         slow_type(text, speed)
