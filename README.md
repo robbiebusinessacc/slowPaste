@@ -5,7 +5,6 @@ Simulate human-like typing using Python with the added feature of adjustable spe
 ## Features:
 - Simulates slow typing to mimic human input.
 - Adjustable typing speed in Words Per Minute (WPM).
-- Cancel typing mid-way with the `esc` key.
 - PyAutoGUI fail-safe: Move your cursor to the top-left corner to halt the script immediately.
 - Types out content from your clipboard.
 
